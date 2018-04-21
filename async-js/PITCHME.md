@@ -10,15 +10,11 @@ Goodbye!
 
 +++
 
-Adiós!
+Adiós1!
 
-+++?code=async-js/test.js&lang=javascript
-
-+++
-
-<button style="padding: 10px" onclick="$.getScript('async-js/test.js')">
-  Hello
-</button>
+<button
+  style="padding: 20px; font-weight: bold; font-size: 20pt"
+  onclick="alert('hello world!')">Hello</button>
 
 +++
 
@@ -29,3 +25,7 @@ function test() {
   })
 }
 ```
+
+@[1](function)
+@[2-4](function body)
+@[3](setTimeout)
