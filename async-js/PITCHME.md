@@ -1,4 +1,4 @@
-Hello!
+Hello Dear!
 
 +++
 
@@ -11,6 +11,14 @@ Goodbye!
 +++
 
 Adiós!
+
++++?code=async-js/test.js&lang=javascript
+
++++
+
+<button style="padding: 10px" onclick="$.getScript('async-js/test.js')">
+  Hello
+</button>
 
 +++
 
