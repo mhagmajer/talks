@@ -1,19 +1,17 @@
-## Managing asynchronous code in JavaScript
+## Managing asynchronous code in&nbps;JavaScript
 
-### Marcin Hagmajer
+<br><br>
 
-#### Warsaw, April 24th
+##### Marcin Hagmajer
+
+###### Warsaw, April 24th
 
 ---
 
 # Event loop
 <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
 
-+++
-
-![JS memory](https://mdn.mozillademos.org/files/4617/default.svg)
-
-+++
++++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 90%
 
 ## Stack
 
