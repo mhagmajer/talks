@@ -1,10 +1,22 @@
-## Managing asynchronous code<br>in JavaScript
+# Managing asynchronous code<br>in JavaScript
+![JavaScript](assets/js-logo.png)
 
-<br><br> <!-- TODO use JS logo -->
+<br><br>
 
 ##### Marcin Hagmajer
-
 ###### Warsaw, April 24th
+
++++
+
+## Agenda
+
+@ol
+
+- Plain text list item
+- Rich **markdown** list *item*
+- Link [within](https://gitpitch.com) list item
+
+@olend
 
 ---
 
@@ -108,14 +120,32 @@ console.log(b);
 +++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
 +++
 
-## Queue
-
-![Logo](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
-
-+++?image=https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg&color=white&size=auto 80%
++++?image=https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg&color=#004a5d&size=auto 80%
 +++
 
 ## Event loop
+
+```javascript
+while (queue.waitForMessage()) {
+  queue.processNextMessage();
+}
+```
+
+@[1](waits synchronously for a message to arrive)
+@[2](runs the given function and message)
+
++++
+
+## Example 1
+
++++
+
+## Example 2
+
++++
+
++++?image=async-js/img/event-loop.png&size=auto 80%
++++
 
 ---
 @title[Promises]
