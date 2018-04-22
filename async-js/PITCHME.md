@@ -11,7 +11,7 @@
 # Event loop
 <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
 
----?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
++++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
 
 +++
 
