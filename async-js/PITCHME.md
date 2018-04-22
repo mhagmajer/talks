@@ -20,9 +20,7 @@
 ---
 # Runtime concepts
 
-<!--
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
--->
+<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
 
 +++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
 +++
@@ -148,6 +146,8 @@ while (queue.waitForMessage()) {
 +++?image=async-js/img/event-loop.png&size=auto 80%
 +++
 
+## Q&A
+
 ---
 # Asynchronous operations
 
@@ -192,5 +192,5 @@ function test() {
 # Thanks
 
 <span style="font-size: 30pt">
-marcin @fa[at] hagmajer.com
+marcin @fa[at] hagmajer . com
 </span>
