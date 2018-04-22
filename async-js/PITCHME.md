@@ -50,21 +50,22 @@ diagonal(3, 4)
 
 +++
 
+## Call Stack Is Limited
+
 ```javascript
-const multiply = (a, b) => a * b;
+function neverEndingStory() {
+  neverEndingStory();
+}
 
-const sq = n => multiply(n, n);
-
-const sqrt = x => Math.sqrt(x);
-
-const diagonal = (l, w) => sqrt(sq(l) + sq(w));
-
-diagonal(3, 4)
+neverEndingStory();
 ```
 
-@[1](function)
-@[3](Stack: a + b)
-@[5](*Stack*: <b>a</b> + b)
+@[1-3]
+@[5]
+@[2](neverEndingStory\(\))
+@[2](neverEndingStory\(\) ⬅ neverEndingStory\(\) )
+@[2](neverEndingStory\(\) ⬅ ... )
+@[2](<span style="color: red">Uncaught RangeError: Maximum call stack size exceeded</span>)
 
 ---
 @title[Promises]
