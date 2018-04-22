@@ -110,7 +110,9 @@ console.log(b);
 
 ## Queue
 
-+++?image=https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg&size=auto 80%
+![Logo](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
+
++++?image=https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg&color=white&size=auto 80%
 +++
 
 ## Event loop
