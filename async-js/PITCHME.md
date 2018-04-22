@@ -50,7 +50,31 @@ diagonal(3, 4)
 
 +++
 
-## Call Stack Is Limited
+## Stack trace
+
+```javascript
+function bar() {
+  throw new Error('Not implemented');
+}
+
+function foo() {
+  bar();
+}
+
+foo();
+```
+
+@[9]
+@[6](foo\(\))
+@[2](foo\(\) ⬅ bar\(\))
+@[2](foo\(\) ⬅ bar\(\))
+@[2](<span style="color: red">Uncaught Error: Not implemented</span>)
+
++++
++++?image=./img/stack-trace.png&size=auto 80%
++++
+
+## Stack overflow
 
 ```javascript
 function neverEndingStory() {
@@ -64,7 +88,7 @@ neverEndingStory();
 @[5]
 @[2](neverEndingStory\(\))
 @[2](neverEndingStory\(\) ⬅ neverEndingStory\(\) )
-@[2](neverEndingStory\(\) ⬅ ... )
+@[2](neverEndingStory\(\) ⬅ neverEndingStory\(\) ⬅ ... )
 @[2](<span style="color: red">Uncaught RangeError: Maximum call stack size exceeded</span>)
 
 ---
