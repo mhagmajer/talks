@@ -1,5 +1,5 @@
 # Managing asynchronous code
-![JavaScript](assets/js-logo.png)
+![JavaScript](../assets/js-logo.png)
 
 ##### Marcin Hagmajer
 ###### Warsaw, April 24th
