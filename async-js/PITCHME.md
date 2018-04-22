@@ -67,11 +67,9 @@ foo();
 @[9]
 @[6](foo\(\))
 @[2](foo\(\) ⬅ bar\(\))
-@[2](foo\(\) ⬅ bar\(\))
 @[2](<span style="color: red">Uncaught Error: Not implemented</span>)
 
-+++
-+++?image=./img/stack-trace.png&size=auto 80%
++++?image=async-js/img/stack-trace.png&size=auto 80%
 +++
 
 ## Stack overflow
