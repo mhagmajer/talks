@@ -1,7 +1,5 @@
-# Managing asynchronous code<br>in JavaScript
+# Managing asynchronous code
 ![JavaScript](assets/js-logo.png)
-
-<br><br>
 
 ##### Marcin Hagmajer
 ###### Warsaw, April 24th
