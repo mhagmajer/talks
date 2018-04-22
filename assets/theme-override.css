@@ -9,3 +9,7 @@
   opacity: 0.95;
   border-radius: 10px;
 }
+
+.reveal .slides section .code-presenting-annotation {
+  font-size: 100%;
+}

@@ -31,7 +31,7 @@ diagonal(3, 4)
 
 @[1, 3, 5, 7]
 @[9]
-@[7]([diagonal\(3, 4\)] ← _**sq(3)** + sq(4)_)
+@[7](diagonal\(3, 4\) ← _**sq(3)** + sq(4)_)
 @[3](diagonal\(3, 4\) ⬅ sq\(3\))
 @[1](diagonal\(3, 4\) ⬅ sq\(3\) ⬅ multiply\(3, 3\))
 @[1](diagonal\(3, 4\) ⬅ sq\(3\) ⬅ 9)
@@ -45,8 +45,7 @@ diagonal(3, 4)
 @[5](diagonal\(3, 4\) ⬅ sqrt\(25\))
 @[5](diagonal\(3, 4\) ⬅ sqrt\(25\) ⬅ Math.sqrt\(25\))
 @[5](diagonal\(3, 4\) ⬅ sqrt\(25\) ⬅ 5)
-@[5](diagonal\(3, 4\) ⬅ 5)
-@[7](5)
+@[7](diagonal\(3, 4\) ⬅ 5)
 @[9](5)
 
 +++
