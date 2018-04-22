@@ -5,20 +5,18 @@
 
 ## Agenda
 
-@ol
+@ol[roman]
 
-- Runtime concepts
-- Asynchronous operations <!-- including streams -->
+- Runtime Concepts
+- Asynchronous Operations
 - Promises
-- Async/Await
+- Async / Await
 - Applications
-
-<!-- closing notes -->
 
 @olend
 
 ---
-# Runtime concepts
+# Runtime Concepts
 
 <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
 
@@ -117,8 +115,6 @@ console.log(b);
 @[5]([1, 2])
 
 +++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
-+++
-
 +++?image=https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg&color=#004a5d&size=auto 80%
 +++
 
@@ -146,10 +142,10 @@ while (queue.waitForMessage()) {
 +++?image=async-js/img/event-loop.png&size=auto 80%
 +++
 
-## Q&A
+# Q&A
 
 ---
-# Asynchronous operations
+# Asynchronous Operations
 
 +++
 
@@ -190,6 +186,8 @@ function test() {
 ---
 
 # Thanks
+
+<!-- closing notes -->
 
 <span style="font-size: 30pt">
 marcin @fa[at] hagmajer . com

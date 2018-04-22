@@ -13,3 +13,7 @@
 .reveal .slides section .code-presenting-annotation {
   font-size: 90%; /* default 70% */
 }
+
+.reveal ol.roman {
+  list-style-type: upper-roman;
+}
