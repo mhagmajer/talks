@@ -1,26 +1,53 @@
-@title[Introduction]
-# Hello
+## Managing asynchronous code in JavaScript
 
-@fa[code-fork]
+### Marcin Hagmajer
 
-+++
-
-Hola!
+#### Warsaw, April 24th
 
 ---
 
-@title[Callbacks]
-Goodbye!
+# Event loop
+<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
+
++++
+
+![JS memory](https://mdn.mozillademos.org/files/4617/default.svg)
+
++++
+
+## Stack
+
+```javascript
+const multiply = (a, b) => a * b;
+
+const sq = n => multiply(n, n);
+
+const sqrt = x => Math.sqrt(x);
+
+const diagonal = (l, w) => sqrt(sq(l) + sq(w));
+
+diagonal(3, 4)
+```
+
+@[1](function)
 
 +++
 
 ```javascript
-function test() {
-  return new Promise((resolve) => {
-    setTimeout(resolve, 1000);
-  })
-}
+const multiply = (a, b) => a * b;
+
+const sq = n => multiply(n, n);
+
+const sqrt = x => Math.sqrt(x);
+
+const diagonal = (l, w) => sqrt(sq(l) + sq(w));
+
+diagonal(3, 4)
 ```
+
+@[1](function)
+@[3](Stack: a + b)
+@[5](*Stack*: <b>a</b> + b)
 
 ---
 @title[Promises]
