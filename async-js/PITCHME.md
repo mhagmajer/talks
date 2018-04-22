@@ -15,7 +15,7 @@
 
 +++
 
-## Stack
+## Call Stack
 
 ```javascript
 const multiply = (a, b) => a * b;
@@ -29,7 +29,10 @@ const diagonal = (l, w) => sqrt(sq(l) + sq(w));
 diagonal(3, 4)
 ```
 
-@[1](function)
+@[7](function<br>a<br>b)
+@[9](function
+  a
+  b)
 
 +++
 
