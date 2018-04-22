@@ -20,9 +20,9 @@
 ```javascript
 const multiply = (a, b) => a * b;
 
-const sq = n => multiply(n, n);
+const sq = a => multiply(a, a);
 
-const sqrt = x => Math.sqrt(x);
+const sqrt = a => Math.sqrt(a);
 
 const diagonal = (l, w) => sqrt(sq(l) + sq(w));
 
@@ -31,8 +31,22 @@ diagonal(3, 4)
 
 @[1, 3, 5, 7]
 @[9]
-@[7](diagonal(3, 4))
-@[7](diagonal\(3, 4\)⬅sq\(l\))
+@[7](diagonal\(3, 4\) _**sq(3)** + sq(4)_)
+@[3](diagonal\(3, 4\) ⬅ sq\(3\))
+@[1](diagonal\(3, 4\) ⬅ sq\(3\) ⬅ multiply\(3, 3\))
+@[1](diagonal\(3, 4\) ⬅ sq\(3\) ⬅ _9_)
+@[3](diagonal\(3, 4\) ⬅ _9_)
+@[7](diagonal\(3, 4\) _9 + **sq(4)**_)
+@[3](diagonal\(3, 4\) ⬅ sq\(4\))
+@[1](diagonal\(3, 4\) ⬅ sq\(4\) ⬅ multiply\(4, 4\))
+@[1](diagonal\(3, 4\) ⬅ sq\(4\) ⬅ _16_)
+@[3](diagonal\(3, 4\) ⬅ _16_)
+@[7](diagonal\(3, 4\) _9 + 16_)
+@[5](diagonal\(3, 4\) ⬅ sqrt\(25\))
+@[5](diagonal\(3, 4\) ⬅ sqrt\(25\) ⬅ Math.sqrt\(25\))
+@[5](diagonal\(3, 4\) ⬅ sqrt\(25\) ⬅ _5_)
+@[5](diagonal\(3, 4\) ⬅ _5_)
+@[7](_5_)
 
 +++
 
