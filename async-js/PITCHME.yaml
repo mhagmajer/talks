@@ -2,4 +2,5 @@ footnote : "© 2018 Marcin Hagmajer"
 highlight: atom-one-dark
 published: false
 remote-control: true
-theme: moon
+theme-override : ../assets/theme-override.css
+# theme: moon
