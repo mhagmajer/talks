@@ -112,6 +112,7 @@ console.log(b);
 
 @[1]
 @[3]
+@[5]
 @[5]([1, 2])
 
 +++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
@@ -158,6 +159,9 @@ while (queue.waitForMessage()) {
 +++
 
 # Streams
+
+---
+# Promises
 
 ---
 # Async / Await
