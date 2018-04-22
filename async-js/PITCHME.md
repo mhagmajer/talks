@@ -1,6 +1,6 @@
 ## Managing asynchronous code<br>in JavaScript
 
-<br><br>
+<br><br> <!-- TODO use JS logo -->
 
 ##### Marcin Hagmajer
 
@@ -8,11 +8,10 @@
 
 ---
 
-# Event loop
+# Runtime concepts
 <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
 
 +++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
-
 +++
 
 ## Call Stack
@@ -88,6 +87,33 @@ neverEndingStory();
 @[2](neverEndingStory\(\) ⬅ neverEndingStory\(\) )
 @[2](neverEndingStory\(\) ⬅ neverEndingStory\(\) ⬅ ... )
 @[2](<span style="color: red">Uncaught RangeError: Maximum call stack size exceeded</span>)
+
++++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
++++
+
+## Heap references
+
+```javascript
+const a = [1], b = a;
+
+a.push(2);
+
+console.log(b);
+```
+
+@[1]
+@[3]
+@[5]([1, 2])
+
++++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
++++
+
+## Queue
+
++++?image=https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg&size=auto 80%
++++
+
+## Event loop
 
 ---
 @title[Promises]
