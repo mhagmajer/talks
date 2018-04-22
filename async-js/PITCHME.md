@@ -1,25 +1,28 @@
 # Managing asynchronous code
 ![JavaScript](assets/js-logo.png)
 
-##### Marcin Hagmajer
-###### Warsaw, April 24th
-
 +++
 
 ## Agenda
 
 @ol
 
-- Plain text list item
-- Rich **markdown** list *item*
-- Link [within](https://gitpitch.com) list item
+- Runtime concepts
+- Asynchronous operations <!-- including streams -->
+- Promises
+- Async/Await
+- Applications
+
+<!-- closing notes -->
 
 @olend
 
 ---
-
 # Runtime concepts
-<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
+
+<!--
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+-->
 
 +++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
 +++
@@ -146,8 +149,25 @@ while (queue.waitForMessage()) {
 +++
 
 ---
-@title[Promises]
-# Promises
+# Asynchronous operations
+
++++
+
+## Possible outcomes
+
++++
+
+## Node callback style
+
++++
+
+# Streams
+
+---
+# Async / Await
+
+---
+# Applications
 
 +++
 
@@ -163,10 +183,14 @@ function test() {
 @[2-4](function body)
 @[3](setTimeout)
 
----
-@title[Demo]
-# Demo
-
 <button
   style="padding: 20px; font-weight: bold; font-size: 20pt"
   onclick="alert('hello world!')">Hello</button>
+
+---
+
+# Thanks
+
+<span style="font-size: 30pt">
+marcin @fa[at] hagmajer.com
+</span>
