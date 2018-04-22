@@ -29,10 +29,10 @@ const diagonal = (l, w) => sqrt(sq(l) + sq(w));
 diagonal(3, 4)
 ```
 
-@[7](function<br>a<br>b)
-@[9](function
-  a
-  b)
+@[1, 3, 5, 7]
+@[9]
+@[7](diagonal(3, 4))
+@[7](diagonal\(3, 4\)⬅sq\(l\))
 
 +++
 
