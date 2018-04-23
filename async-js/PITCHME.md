@@ -247,7 +247,7 @@ fs.readFile('/etc/passwd', (err, data) => {
 
 ## Callback soup
 
-~[Callback soup](async-js/img/callback-soup.png)
+![Callback soup](async-js/img/callback-soup.png)
 
 <!-- +++?image=async-js/img/callback-soup.png&size=auto 60% -->
 +++
