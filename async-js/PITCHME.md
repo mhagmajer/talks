@@ -220,9 +220,9 @@ function fib(n) {
 
 ## Possible outcomes
 
-+++?image=async-js/img/async-op-pending.gif&size=auto 60%
 +++?image=async-js/img/async-op-succeed.gif&size=auto 60%
 +++?image=async-js/img/async-op-fail.gif&size=auto 60%
++++?image=async-js/img/async-op-pending.gif&size=auto 60%
 +++
 
 ## Error-first callback
@@ -239,10 +239,17 @@ fs.readFile('/etc/passwd', (err, data) => {
 ```
 
 @[1]
-@[3] first argument is an optional error
-@[4-6] we check for error at the beginning
-@[7] finally we can process the results
+@[3](first argument is an optional error)
+@[4-6](we check for error at the beginning)
+@[7](finally we process the results)
 
++++
+
+## Callback soup
+
+~[Callback soup](async-js/img/callback-soup.png)
+
+<!-- +++?image=async-js/img/callback-soup.png&size=auto 60% -->
 +++
 
 # Streams
