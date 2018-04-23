@@ -135,7 +135,7 @@ while (queue.waitForMessage()) {
 ## Example 1
 
 <div class="buttons">
-  <button onclick="n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
+  <button onclick="int1=n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64); console.log(int1)">
     Start animation
   </button>
   <button>
@@ -143,7 +143,7 @@ while (queue.waitForMessage()) {
   </button>
 </div>
 
-<pre id=p style="font-size: 6px" />
+<pre id=p style="font-size: 13px" />
 
 +++
 

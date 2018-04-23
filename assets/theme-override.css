@@ -17,3 +17,11 @@
 .reveal ol.roman {
   list-style-type: upper-roman;
 }
+
+.reveal div.buttons button {
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  border-radius: 28px;
+  color: #eee8d5;
+  font-size: 22pt;
+  padding: 20px;
+}
