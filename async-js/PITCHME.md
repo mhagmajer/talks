@@ -130,9 +130,9 @@ while (queue.waitForMessage()) {
 @[1](waits synchronously for a message to arrive)
 @[2](runs the given function and message until the stack is empty again)
 
-++
++++
 
-## setTimeout
+## `setTimeout`
 
 ```javascript
 const callback = id => console.log(`callback ${id}`);
