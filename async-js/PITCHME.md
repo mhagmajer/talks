@@ -135,7 +135,8 @@ while (queue.waitForMessage()) {
 ## `setTimeout`
 
 ```javascript
-const callback = id => console.log(`callback ${id}`);
+const callback =
+  id => console.log(`callback ${id}`);
 
 callback('start');
 setTimeout(callback, 20, 'one');
