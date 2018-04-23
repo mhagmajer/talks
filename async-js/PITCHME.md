@@ -304,27 +304,44 @@ new Promise((resolve, reject) => {
 ## `Promise.resolve`
 
 ```javascript
-Promise.resolve(420);
-
 new Promise(resolve => resolve(420));
+
+Promise.resolve(420);
 ```
+
+@[1]
+@[3]
 
 +++
 
 ## `Promise.reject`
 
 ```javascript
-Promise.reject(
-  new Error('Invalid password'));
-
 new Promise((resolve, reject) =>
   reject(new Error('Invalid password')));
+
+Promise.reject(
+  new Error('Invalid password'));
 ```
+
+@[1-2]
+@[3-4]
 
 +++
 
-### `Promise.prototype.then`
+### `Promise.prototype.then` (1)
 
+<!-- https://bitsofco.de/javascript-promises-101/ -->
+
+```javascript
+fetch(url).then((result) => {
+  /* successFunction */
+}, (err) => {
+  /* errorFunction */
+});
+```
+
++++?image=async-js/img/promise-then.png&color=#004a5d&size=auto 80%
 +++
 
 ### `Promise.prototype.catch`
