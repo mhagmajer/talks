@@ -128,11 +128,18 @@ while (queue.waitForMessage()) {
 ```
 
 @[1](waits synchronously for a message to arrive)
-@[2](runs the given function and message)
+@[2](runs the given function and message until the stack is empty again)
 
 +++
 
 ## Example 1
+
+<pre id="p">
+
+<button onclick="n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
+Start
+</button>
+
 
 +++
 
