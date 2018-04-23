@@ -216,12 +216,12 @@ function fib(n) {
 
 @ulend
 
-++
++++
 
 ## Possible outcomes
 
-+++?image=async-js/img/async-op-pending.gif&size=auto 80%
-+++?image=async-js/img/async-op-succeed.gif&size=auto 80%
++++?image=async-js/img/async-op-pending.gif&size=auto 60%
++++?image=async-js/img/async-op-succeed.gif&size=auto 60%
 
 +++
 
