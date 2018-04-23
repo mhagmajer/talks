@@ -265,6 +265,11 @@ try {
 }
 ```
 
+@[2-5]
+@[3](we throw back any error we get)
+@[6-8](catch all errors \(?\))
+@[3](<span style="color: red">Program terminated</span>)
+
 # Streams
 
 ## TBD
