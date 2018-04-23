@@ -249,7 +249,6 @@ fs.readFile('/etc/passwd', (err, data) => {
 
 ## TBD
 
-
 ---
 # Promises
 
