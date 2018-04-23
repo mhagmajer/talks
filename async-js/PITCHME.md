@@ -200,6 +200,12 @@ function fib(n) {
 
 # Q&A
 
+@ul
+
+- When does a JavaScript program end?
+
+@ulend
+
 ---
 # Asynchronous Operations
 
@@ -272,6 +278,25 @@ try {
 
 ---
 # Promises
+
++++?image=async-js/img/promise-states.png&size=auto 60%
++++
+
+```javascript
+new Promise((resolve, reject) => {
+  legacyOperation((err, result) => {
+    if (err) {
+      reject(err);
+    } else {
+      resolve(result);
+    }
+  });
+});
+```
+
+@[1](created with a single argument - the executor)
+@[2](legacy asynchronous operation)
+@[3-7](settle promise accordingly)
 
 ---
 # Async / Await
