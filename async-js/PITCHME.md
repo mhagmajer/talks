@@ -222,14 +222,32 @@ function fib(n) {
 
 +++?image=async-js/img/async-op-pending.gif&size=auto 60%
 +++?image=async-js/img/async-op-succeed.gif&size=auto 60%
-
++++?image=async-js/img/async-op-fail.gif&size=auto 60%
 +++
 
-## Node callback style
+## Error-first callback
+
+```javascript
+import fs from 'fs';
+
+fs.readFile('/etc/passwd', (err, data) => {
+  if (err) {
+    throw new Error('Unable to fetch the file');
+  }
+  console.log(data);
+});
+```
+
+@[1]
+@[3] first argument is an optional error
+@[4-6] we check for error at the beginning
+@[7] finally we can process the results
 
 +++
 
 # Streams
+
+## TBD
 
 ---
 # Promises
