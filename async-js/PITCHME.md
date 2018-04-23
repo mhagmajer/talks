@@ -205,7 +205,23 @@ function fib(n) {
 
 +++
 
+## Examples
+
+@ul
+
+- Database writes
+- Resource fetches
+- HTTP calls
+- User input
+
+@ulend
+
+++
+
 ## Possible outcomes
+
++++?image=async-js/img/async-op-pending.gif&size=auto 80%
++++?image=async-js/img/async-op-succeed.gif&size=auto 80%
 
 +++
 
