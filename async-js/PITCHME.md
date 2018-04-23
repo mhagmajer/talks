@@ -130,14 +130,37 @@ while (queue.waitForMessage()) {
 @[1](waits synchronously for a message to arrive)
 @[2](runs the given function and message until the stack is empty again)
 
+++
+
+## setTimeout
+
+```javascript
+const callback = id => console.log(`callback ${id}`);
+
+callback('start');
+setTimeout(callback, 20, 'one');
+setTimeout(callback);
+setTimeout(callback, 0, 'three');
+callback('end');
+```
+
+@[1]
+@[3,7]
+@[4-6]
+@[3-7]
+@[3](callback start)
+@[7](callback end)
+@[5](callback undefined)
+@[6](callback three)
+@[4](callback one)
+
 +++
-<!-- Example 2 -->
 
 <div class="buttons">
   <button onclick="window.intId != null ? (clearInterval(window.intId), delete window.intId) : window.intId=n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
     Toggle animation
   </button>
-  <button onclick="const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2); console.log(fib(36))">
+  <button onclick="const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2); fib(36)">
     fib(36)
   </button>
   <button onclick="const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2); fib(38)">
@@ -145,14 +168,12 @@ while (queue.waitForMessage()) {
   </button>
 </div>
 
-<div id="p" style="font-size: 13px; height: 100%; font-family: monospace; white-space: pre;" />
+<div id="p" style="font-size: 12px; height: 480px; font-family: monospace; white-space: pre;" />
 
-+++?image=async-js/img/chrome-unresponsive.png&size=auto 50%
++++?image=async-js/img/chrome-unresponsive.png&size=auto 65%
 +++
 
-## Example 2
-
-+++
+## Execution never blocks
 
 +++?image=async-js/img/event-loop.png&size=auto 80%
 +++
