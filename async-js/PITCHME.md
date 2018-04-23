@@ -134,7 +134,7 @@ while (queue.waitForMessage()) {
 <!-- Example 2 -->
 
 <div class="buttons">
-  <button onclick="window.intId ? clearInterval(window.intId) : window.intId=n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
+  <button onclick="window.intId != null ? (clearInterval(window.intId), delete window.intId) : window.intId=n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
     Toggle animation
   </button>
   <button onclick="const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2); console.log(fib(36))">
@@ -145,9 +145,9 @@ while (queue.waitForMessage()) {
   </button>
 </div>
 
-<pre id=p style="font-size: 13px" />
+<div id="p" style="font-size: 13px; height: 100%; font-family: monospace; white-space: pre;" />
 
-+++?image=async-js/img/chrome-unresponsive.png&size=auto 80%
++++?image=async-js/img/chrome-unresponsive.png&size=auto 50%
 +++
 
 ## Example 2
