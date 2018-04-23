@@ -131,14 +131,13 @@ while (queue.waitForMessage()) {
 @[2](runs the given function and message until the stack is empty again)
 
 +++
-
-## Example 1
+<!-- Example 2 -->
 
 <div class="buttons">
-  <button onclick="window.intId ? clearInterval(intId) : int1=n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
+  <button onclick="window.intId ? clearInterval(window.intId) : window.int1=n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
     Toggle animation
   </button>
-  <button onclick="const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2); fib(36)">
+  <button onclick="const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2); console.log(fib(36))">
     fib(36)
   </button>
   <button onclick="const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2); fib(38)">
