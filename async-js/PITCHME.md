@@ -325,11 +325,25 @@ Promise.reject(
 ```
 
 @[1-2]
-@[3-4]
+@[4-5]
 
 +++
 
-### `Promise.prototype.then` (1)
+## `Promise.prototype.then`
+
+<!-- https://bitsofco.de/javascript-promises-101/ -->
+
+```javascript
+fetch(url).then((result) => {
+  // you can return value
+  // or return promise
+  // or throw error
+});
+```
+
++++
+
+## `Promise.prototype.then`
 
 <!-- https://bitsofco.de/javascript-promises-101/ -->
 
@@ -341,14 +355,14 @@ fetch(url).then((result) => {
 });
 ```
 
-+++?image=async-js/img/promise-then.png&color=#004a5d&size=auto 80%
++++?image=async-js/img/promise-then.png&color=#006984&size=auto 80%
 +++
 
-### `Promise.prototype.catch`
+## `Promise.prototype.catch`
 
 +++
 
-### `Promise.prototype.finally`
+### `Promise.prototype.finally` (stage 4)
 
 ---
 # Async / Await
