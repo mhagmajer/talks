@@ -154,6 +154,24 @@ callback('end');
 @[6](callback undefined)
 @[7](callback three)
 @[5](callback one)
+@[4-8](start, end, undefined, three, one)
+
++++?image=async-js/img/fib-sequence.gif&size=auto 80%
++++
+
+## Naive Fibonacci implementation
+
+```javascript
+function fib(n) {
+  if (n < 2) {
+    return n;
+  }
+
+  return fib(n - 1) + fib(n - 2);
+}
+```
+@[2-4]
+@[6]
 
 +++
 
@@ -174,7 +192,7 @@ callback('end');
 +++?image=async-js/img/chrome-unresponsive.png&size=auto 65%
 +++
 
-## Execution never blocks
+## Event loop never blocks
 
 +++?image=async-js/img/event-loop.png&size=auto 80%
 +++
