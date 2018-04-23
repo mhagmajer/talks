@@ -297,6 +297,41 @@ new Promise((resolve, reject) => {
 @[1](created with a single argument - the executor)
 @[2](legacy asynchronous operation)
 @[3-7](settle promise accordingly)
+@[1-9](common pattern to wrap legacy operations)
+
++++
+
+## `Promise.resolve`
+
+```javascript
+Promise.resolve(420);
+
+new Promise(resolve => resolve(420));
+```
+
++++
+
+## `Promise.reject`
+
+```javascript
+Promise.reject(
+  new Error('Invalid password'));
+
+new Promise((resolve, reject) =>
+  reject(new Error('Invalid password')));
+```
+
++++
+
+### `Promise.prototype.then`
+
++++
+
+### `Promise.prototype.catch`
+
++++
+
+### `Promise.prototype.finally`
 
 ---
 # Async / Await
