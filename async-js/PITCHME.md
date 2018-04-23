@@ -134,12 +134,16 @@ while (queue.waitForMessage()) {
 
 ## Example 1
 
-<pre id="p">
+<div class="buttons">
+  <button onclick="n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
+    Start animation
+  </button>
+  <button>
+    fib(20)
+  </button>
+</div>
 
-<button onclick="n=setInterval('for(n+=7,i=k,P=\'p.\\n\';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;p.innerHTML=P',k=64)">
-Start
-</button>
-
+<pre id=p style="font-size: 6px" />
 
 +++
 
