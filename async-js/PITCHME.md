@@ -301,7 +301,7 @@ new Promise((resolve, reject) => {
 
 +++
 
-## `Promise.resolve`
+### `Promise.resolve`
 
 ```javascript
 new Promise(resolve => resolve(420));
@@ -314,7 +314,7 @@ Promise.resolve(420);
 
 +++
 
-## `Promise.reject`
+### `Promise.reject`
 
 ```javascript
 new Promise((resolve, reject) =>
@@ -329,7 +329,7 @@ Promise.reject(
 
 +++
 
-#### `Promise.prototype.then`
+### `Promise.prototype.then`
 
 <!-- https://bitsofco.de/javascript-promises-101/ -->
 
@@ -343,7 +343,7 @@ fetch(url).then((result) => {
 
 +++
 
-#### `Promise.prototype.then`
+### `Promise.prototype.then`
 
 <!-- https://bitsofco.de/javascript-promises-101/ -->
 
@@ -358,11 +358,11 @@ fetch(url).then((result) => {
 +++?image=async-js/img/promise-then.png&color=#006984&size=auto 80%
 +++
 
-#### `Promise.prototype.catch`
+### `Promise.prototype.catch`
 
 +++
 
-#### `Promise.prototype.finally` (stage 4)
+### `Promise.prototype.finally` (stage 4)
 
 ---
 # Async / Await
