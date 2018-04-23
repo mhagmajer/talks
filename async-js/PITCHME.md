@@ -252,6 +252,19 @@ fs.readFile('/etc/passwd', (err, data) => {
 <!-- +++?image=async-js/img/callback-soup.png&size=auto 60% -->
 +++
 
+## Error handling
+
+```javascript
+try {
+  fs.readFile('/etc/passwd', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+  });  
+} catch (e) {
+  console.error(e);
+}
+```
+
 # Streams
 
 ## TBD
