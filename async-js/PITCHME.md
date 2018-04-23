@@ -243,7 +243,7 @@ fs.readFile('/etc/passwd', (err, data) => {
 @[4-6](we check for error at the beginning)
 @[7](finally we process the results)
 
-+++?image=async-js/img/callback-soup.png&size=auto 60%
++++?image=async-js/img/callback-soup.png&size=auto 50%
 +++
 
 ## Error handling
