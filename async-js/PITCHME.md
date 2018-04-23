@@ -145,15 +145,15 @@ setTimeout(callback, 0, 'three');
 callback('end');
 ```
 
-@[1]
-@[3,7]
-@[4-6]
-@[3-7]
-@[3](callback start)
-@[7](callback end)
-@[5](callback undefined)
-@[6](callback three)
-@[4](callback one)
+@[1-2]
+@[4,8]
+@[5-7]
+@[4-8](what is the execution order?)
+@[4](callback start)
+@[8](callback end)
+@[6](callback undefined)
+@[7](callback three)
+@[5](callback one)
 
 +++
 
