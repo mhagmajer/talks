@@ -283,9 +283,30 @@ try {
 
 +++
 
-# Streams
+## Streams
 
-## TBD
+@ol
+
+- Readable streams
+- Writable streams
+- Transforms
+
+@olend
+
++++
+
+```javascript
+function readBody(cb) {
+  let body = '';
+  request.on('data', (data) => {
+    body += data;
+  });
+  request.on('error', () => cb(error));  
+  request.on('end', () => cb(null, body));  
+}
+```
+
+# Q&A
 
 ---
 # Promises
@@ -522,6 +543,44 @@ Promise.race([
 
 # Q&A
 
+@ul
+
+- How do timeout operations?
+
+@ulend
+
++++
+
+```javascript
+Promise.race([
+  genLongRunningTask(),
+  delay(10000, false),
+]);
+```
+
+@[2]
+@[3](delay)
+@[1-4](promise rejects after the threshold)
+
+# Q&A
+
+@ul
+
+- How do process tasks in sequence?
+
+@ulend
+
++++
+
+```javascript
+function sequence(tasks) {
+  return tasks.reduce(
+    (a, task) => a.then(task),
+    Promise.resolve()
+  );
+}
+```
+
 ---
 
 # Async / Await
@@ -628,6 +687,8 @@ async function genOrderItems() {
 ---
 
 # Thanks
+
+@fa[npm] `promise-more`
 
 <span style="font-size: 30pt">
 marcin @fa[at] hagmajer . com
