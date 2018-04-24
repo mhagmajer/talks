@@ -570,6 +570,8 @@ Promise.race([
 @[3](delay)
 @[1-4](promise rejects after the threshold)
 
++++
+
 # Q&A
 
 @ul
