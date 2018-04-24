@@ -259,6 +259,7 @@ fs.readFile('/etc/passwd', (err, data) => {
 @[3](first argument is an optional error)
 @[4-6](we check for error at the beginning)
 @[7](finally we process the results)
+@[1-8]
 
 +++?image=async-js/img/callback-soup.png&size=auto 50%
 +++
@@ -283,7 +284,7 @@ try {
 
 +++
 
-## Streams
+## Node.js Streams
 
 @ol
 
