@@ -226,9 +226,9 @@ function fib(n) {
 
 ## Possible outcomes
 
-+++?image=async-js/img/async-op-succeed.gif&size=auto 60%
-+++?image=async-js/img/async-op-fail.gif&size=auto 60%
 +++?image=async-js/img/async-op-pending.gif&size=auto 60%
++++?image=async-js/img/async-op-fail.gif&size=auto 60%
++++?image=async-js/img/async-op-succeed.gif&size=auto 60%
 +++
 
 ## Error-first callback
@@ -279,6 +279,14 @@ try {
 ---
 # Promises
 
++++
+
+## Basic tool for modeling asynchronous operations
+
++++
+
+## Promise creation
+
 +++?image=async-js/img/promise-states.png&size=auto 60%
 +++
 
@@ -301,19 +309,6 @@ new Promise((resolve, reject) => {
 
 +++
 
-### `Promise.resolve`
-
-```javascript
-new Promise(resolve => resolve(420));
-
-Promise.resolve(420);
-```
-
-@[1]
-@[3]
-
-+++
-
 ### `Promise.reject`
 
 ```javascript
@@ -324,8 +319,56 @@ Promise.reject(
   new Error('Invalid password'));
 ```
 
-@[1-2]
-@[4-5]
+@[1-2](executor runs immediately)
+@[4-5](short version)
+
++++
+
+### `Promise.resolve`
+
+```javascript
+new Promise(resolve => resolve(420));
+
+Promise.resolve(420);
+```
+
+@[1](executor runs immediately)
+@[3](short version)
+
++++
+
+### `Promise.resolve` continues
+
+```javascript
+Promise.resolve(Promise.resolve(420));
+
+Promise.resolve(Promise.reject(
+  new Error('Invalid password')));
+
+Promise.resolve(x); // -> promise
+```
+
+@[1]
+@[3-4]
+@[6](ensure it's a promise)
+@[1-6]
+
++++
+
+## Promise continuation
+
++++
+
+### Task example
+
+<!-- simple task with delay -->
+
+```javascript
+const delay = (ms, succeed = true)
+  => new Promise((resolve) => {
+    setTimeout(succeed ? resolve : reject, ms, ms);
+  });
+```
 
 +++
 
