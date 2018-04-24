@@ -11,7 +11,6 @@
 - Asynchronous Operations
 - Promises
 - Async / Await
-- Applications
 
 @olend
 
@@ -613,10 +612,6 @@ async function genOrderItems() {
 +++
 
 # Q&A
-
----
-
-# Applications
 
 ---
 
