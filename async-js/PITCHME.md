@@ -359,9 +359,44 @@ Promise.resolve(x); // -> promise
 
 +++
 
-### Task example
+### `Promise.prototype.then`
 
-<!-- simple task with delay -->
+```javascript
+fetch(url).then((result) => {
+  // a) return value
+  // b) return promise
+  // c) throw error
+});
+```
+
+@[2](handle fulfilled state)
+@[3]
+@[4]
+@[5](new promise)
+@[1-5]
+
++++
+
+### `Promise.prototype.catch`
+
+```javascript
+fetch(url).catch((reason) => {
+  // a) return value
+  // b) return promise
+  // c) throw error
+});
+```
+
+@[2](handle rejected state)
+@[3]
+@[4]
+@[5](new promise)
+@[1-5]
+
++++?image=async-js/img/promise-then-catch.png&color=#006984&size=auto 80%
++++
+
+### Task example
 
 ```javascript
 const delay = (ms, succeed = true)
@@ -372,20 +407,39 @@ const delay = (ms, succeed = true)
   ));
 ```
 
+@[1]
+@[2-6]
+@[3](we will either resolve or reject)
+@[4](after `ms`)
+@[5](`ms` will be passed as result or reason)
+
 +++
 
-### `Promise.prototype.then`
-
-<!-- https://bitsofco.de/javascript-promises-101/ -->
+### `Promise.prototype.then` - example
 
 ```javascript
-fetch(url).then((result) => {
-  // you can return value
-  // or return promise
-  // or throw error
-});
+delay(1000)
+  .then(ms => delay(ms + 500))
+  .then(ms => delay(ms + 500))
+  .then(ms => delay(ms + 500));
 ```
 
+<!--
+https://bevacqua.github.io/promisees/
+
+const delay = (n, succeed = true) => new Function(`
+  return new Promise(function d${n}(resolve) {
+    setTimeout(${succeed} ? resolve : reject, ${n}, ${n});
+  });
+`)();
+
+delay(2000)
+  .then(ms => delay(ms + 500))
+  .then(ms => delay(ms + 500))
+  .then(ms => delay(ms + 500));
+-->
+
++++?image=async-js/img/async-then-delay.gif&size=auto 60%
 +++
 
 ### `Promise.prototype.then`
@@ -400,8 +454,6 @@ fetch(url).then((result) => {
 });
 ```
 
-+++?image=async-js/img/promise-then.png&color=#006984&size=auto 80%
-+++
 
 ### `Promise.prototype.catch`
 
