@@ -131,7 +131,19 @@ while (queue.waitForMessage()) {
 
 +++
 
-## `setTimeout`
+### `setTimeout`
+
+```javascript
+function setTimeout(
+  func,
+  delay = 0,
+  ...args
+) {
+  // calls func after delay [ms]
+}
+```
+
++++
 
 ```javascript
 const callback =
