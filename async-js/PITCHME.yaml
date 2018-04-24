@@ -1,6 +1,6 @@
 footnote : "Marcin Hagmajer, Code Europe 2018"
 highlight: atom-one-dark
-published: false
+published: true
 remote-control: true
 theme-override : assets/theme-override.css
 theme: moon
