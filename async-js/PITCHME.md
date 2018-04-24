@@ -365,9 +365,11 @@ Promise.resolve(x); // -> promise
 
 ```javascript
 const delay = (ms, succeed = true)
-  => new Promise((resolve) => {
-    setTimeout(succeed ? resolve : reject, ms, ms);
-  });
+  => new Promise(resolve => setTimeout(
+    succeed ? resolve : reject,
+    ms,
+    ms,
+  ));
 ```
 
 +++
