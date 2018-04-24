@@ -377,7 +377,7 @@ Promise.resolve(420);
 
 +++
 
-### `Promise.resolve` continues
+### Promise.resolve continues
 
 ```javascript
 Promise.resolve(Promise.resolve(420));
