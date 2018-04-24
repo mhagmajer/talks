@@ -692,15 +692,15 @@ async function genOrderItems() {
 
 +++
 
-## Rules of thumb
+## Good practice
 
-@ul
+@ol
 
-- Find statements which depend on the execution of other statements
+- Figure out dependencies
 - Group-dependent statements in async functions
-- Execute these async functions concurrently
+- Execute them concurrently
 
-@ulend
+@olend
 
 +++
 
