@@ -494,7 +494,8 @@ delay(2000)
 
 ```javascript
 delay(2000)
-  .then(ms => delay(ms + 500, false).catch(ms => ms))
+  .then(ms => delay(ms + 500, false)
+    .catch(ms => ms))
   .then(ms => delay(ms + 500))
   .then(ms => delay(ms + 500));
 ```
