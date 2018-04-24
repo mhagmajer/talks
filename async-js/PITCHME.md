@@ -385,7 +385,7 @@ Promise.resolve(Promise.resolve(420));
 Promise.resolve(Promise.reject(
   new Error('Invalid password')));
 
-Promise.resolve(x); // -> promise
+Promise.resolve(x); // -> always promise
 ```
 
 @[1]
