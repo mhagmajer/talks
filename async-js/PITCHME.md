@@ -415,10 +415,10 @@ const delay = (ms, succeed = true)
 
 +++
 
-### `Promise.prototype.then` - example
+### Chaining promises (A)
 
 ```javascript
-delay(1000)
+delay(2000)
   .then(ms => delay(ms + 500))
   .then(ms => delay(ms + 500))
   .then(ms => delay(ms + 500));
@@ -428,69 +428,119 @@ delay(1000)
 https://bevacqua.github.io/promisees/
 
 const delay = (n, succeed = true) => new Function(`
-  return new Promise(function d${n}(resolve) {
+  return new Promise(function d${n}(resolve, reject) {
     setTimeout(${succeed} ? resolve : reject, ${n}, ${n});
   });
 `)();
-
-delay(2000)
-  .then(ms => delay(ms + 500))
-  .then(ms => delay(ms + 500))
-  .then(ms => delay(ms + 500));
 -->
 
 +++?image=async-js/img/async-then-delay.gif&size=auto 60%
 +++
 
-### `Promise.prototype.then`
-
-<!-- https://bitsofco.de/javascript-promises-101/ -->
+### Chaining promises (B)
 
 ```javascript
-fetch(url).then((result) => {
-  /* successFunction */
-}, (err) => {
-  /* errorFunction */
+delay(2000)
+  .then(ms => delay(ms + 500, false))
+  .then(ms => delay(ms + 500))
+  .then(ms => delay(ms + 500));
+```
+
++++?image=async-js/img/async-then-delay-error.gif&size=auto 60%
++++
+
+### Chaining promises (C)
+
+```javascript
+delay(2000)
+  .then(ms => delay(ms + 500, false).catch(ms => ms))
+  .then(ms => delay(ms + 500))
+  .then(ms => delay(ms + 500));
+```
+
++++?image=async-js/img/async-then-delay-error-catch.gif&size=auto 60%
++++
+
+### `Promise.prototype.finally`
+#### Stage 4
+
+```javascript
+promise.finally(() => {
+  cleanup();
 });
 ```
 
-
-### `Promise.prototype.catch`
-
-+++
-
-### `Promise.prototype.finally` (stage 4)
-
----
-# Async / Await
-
----
-# Applications
+@[1](doesn't pass results)
+@[1-3]
 
 +++
+
+### `Promise.all`
 
 ```javascript
-function test() {
-  return new Promise((resolve) => {
-    setTimeout(resolve, 1000);
-  })
-}
+Promise.all([
+  delay(1500),
+  delay(2000),
+  delay(2500),
+]);
 ```
 
-@[1](function)
-@[2-4](function body)
-@[3](setTimeout)
+@[1](resolved as soon as all resolve)
+@[1-5](returns array of results or reason)
 
-<button
-  style="padding: 20px; font-weight: bold; font-size: 20pt"
-  onclick="alert('hello world!')">Hello</button>
++++?image=async-js/img/async-promise-all.gif&size=auto 60%
++++
+
+### `Promise.race`
+
+```javascript
+Promise.race([
+  delay(2000),
+  delay(4000, false),
+  delay(6000),
+]);
+```
+
+@[1](resolved as soon as any resolve)
+@[1-5](returns a result or reason)
+
++++?image=async-js/img/async-promise-race.gif&size=auto 60%
++++
+
++++
+
+# Q&A
+
+---
+
+# Async / Await
+
+```javascript
+getData(a => {
+  getMoreData((a, b) => {
+    getMoreData((b, c) => {
+      getMoreData((c, d) => {
+        getMoreData((d, e) => {
+          console.log(e);
+        });
+      });
+    });
+  });
+});
+```
+
+---
+
+# Applications
 
 ---
 
 # Thanks
 
-<!-- closing notes -->
-
 <span style="font-size: 30pt">
 marcin @fa[at] hagmajer . com
 </span>
+
+<!--
+If you're interested in working with this stuff professionally shoot my an email at marcin@hagmajer.com or let's talk after the event. I know a few cool companies who hire for remote work in JavaScript and React especially that I can hook you up with.
+-->
