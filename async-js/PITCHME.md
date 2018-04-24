@@ -456,7 +456,7 @@ const delay = (ms, succeed = true)
 
 +++
 
-### Chaining promises (A)
+### Chaining promises (I)
 
 ```javascript
 delay(2000)
@@ -478,7 +478,7 @@ const delay = (n, succeed = true) => new Function(`
 +++?image=async-js/img/async-then-delay.gif&size=auto 60%
 +++
 
-### Chaining promises (B)
+### Chaining promises (II)
 
 ```javascript
 delay(2000)
@@ -490,7 +490,7 @@ delay(2000)
 +++?image=async-js/img/async-then-delay-error.gif&size=auto 60%
 +++
 
-### Chaining promises (C)
+### Chaining promises (III)
 
 ```javascript
 delay(2000)
