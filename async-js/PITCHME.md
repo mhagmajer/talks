@@ -440,11 +440,12 @@ fetch(url).catch((reason) => {
 
 ```javascript
 const delay = (ms, succeed = true)
-  => new Promise(resolve => setTimeout(
-    succeed ? resolve : reject,
-    ms,
-    ms,
-  ));
+  => new Promise((resolve, reject)
+    => setTimeout(
+      succeed ? resolve : reject,
+      ms,
+      ms,
+    ));
 ```
 
 @[1]
