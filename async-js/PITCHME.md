@@ -738,7 +738,3 @@ async function genOrderItems() {
 <span style="font-size: 30pt">
 marcin @fa[at] hagmajer . com
 </span>
-
-<!--
-If you're interested in working with this stuff professionally shoot my an email at marcin@hagmajer.com or let's talk after the event. I know a few cool companies who hire for remote work in JavaScript and React especially that I can hook you up with.
--->
