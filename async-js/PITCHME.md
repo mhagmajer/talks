@@ -531,6 +531,89 @@ getData(a => {
 });
 ```
 
++++
+
+```javascript
+getData(a)
+.then(a => genMoreData(a))
+.then(b => genMoreData(b))
+.then(c => genMoreData(c))
+.then(d => genMoreData(d))
+.then(e => console.log(e));
+```
+
+@[2](gen- prefix)
+
++++
+
+```javascript
+(async () => {
+  const a = await genData(a);
+  const b = await genMoreData(a);
+  const c = await genMoreData(b);
+  const d = await genMoreData(c);
+  const e = await genMoreData(d);
+  console.log(e);
+})();
+```
+
+@[1](async block allows resolving promises)
+@[2](special keyword await)
+
++++?image=async-js/img/js-callbacks-promises-asyncawait.gif&size=auto 60%
++++
+
+```javascript
+async function genData() {
+  try {
+    // ...
+  } catch (e) {
+    console.error(e);
+  }
+}
+```
+
+@[3](always wrap async function in try-catch)
+
++++
+
+### Don't abuse async-await
+
++++
+
+```javascript
+async function genOrderItems() {
+  const items = await genCartItems();
+  for (const item of items) {
+    await genSendRequest(item);
+  }
+}
+```
+
++++
+
+```javascript
+async function genOrderItems() {
+  const items = await genCartItems();
+  await Promise.all(items.map(
+    item => genSendRequest(item)));
+}
+```
+
+## Rules of thumb
+
+@ul
+
+- Find statements which depend on the execution of other statements
+- Group-dependent statements in async functions
+- Execute these async functions concurrently
+
+@ulend
+
++++
+
+# Q&A
+
 ---
 
 # Applications
