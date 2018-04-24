@@ -504,6 +504,7 @@ delay(2000)
 +++
 
 ### `Promise.prototype.finally`
+#### ECMA Stage 4
 
 ```javascript
 promise.finally(() => {
@@ -511,10 +512,8 @@ promise.finally(() => {
 });
 ```
 
-@[1](doesn't pass results)
-@[1-3]
-
-#### Stage 4
+@[1](doesn't pass result or reason)
+@[1-3](return original promise)
 
 +++
 
@@ -548,8 +547,6 @@ Promise.race([
 @[1-5](returns a result or reason)
 
 +++?image=async-js/img/async-promise-race.gif&size=auto 60%
-+++
-
 +++
 
 # Q&A
