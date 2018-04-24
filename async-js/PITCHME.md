@@ -449,10 +449,10 @@ const delay = (ms, succeed = true)
 ```
 
 @[1]
-@[2-6]
-@[3](we will either resolve or reject)
-@[4](after `ms`)
-@[5](`ms` will be passed as result or reason)
+@[2-7]
+@[4](we will either resolve or reject)
+@[5](after `ms`)
+@[6](`ms` will be passed as result or reason)
 
 +++
 
