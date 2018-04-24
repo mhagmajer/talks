@@ -733,11 +733,13 @@ async function genOrderItems() {
 
 ---
 
-# Thanks
-
-+++
-
 ## `npm/promise-more`
+
+@ul
+
+- queuing & scheduling
+
+@ulend
 
 +++
 
