@@ -735,7 +735,11 @@ async function genOrderItems() {
 
 # Thanks
 
-`npm/promise-more`
++++
+
+##`npm/promise-more`
+
++++
 
 <span style="font-size: 30pt">
 marcin @fa[at] hagmajer . com
