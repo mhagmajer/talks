@@ -515,6 +515,8 @@ Promise.race([
 
 # Async / Await
 
++++
+
 ```javascript
 getData(a => {
   getMoreData((a, b) => {
