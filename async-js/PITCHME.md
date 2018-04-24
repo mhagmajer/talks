@@ -500,11 +500,10 @@ delay(2000)
   .then(ms => delay(ms + 500));
 ```
 
-+++?image=async-js/img/async-then-delay-error-catch.gif&size=auto 60%
++++?image=async-js/img/async-then-delay-error-catch.gif&size=auto 80%
 +++
 
 ### `Promise.prototype.finally`
-#### Stage 4
 
 ```javascript
 promise.finally(() => {
@@ -514,6 +513,8 @@ promise.finally(() => {
 
 @[1](doesn't pass results)
 @[1-3]
+
+#### Stage 4
 
 +++
 
