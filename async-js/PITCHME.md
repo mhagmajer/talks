@@ -646,8 +646,9 @@ getData(a)
 })();
 ```
 
-@[1](async block allows resolving promises)
+@[1](async function allows resolving promises)
 @[2](special keyword await)
+@[1-8](async functions always return a promise)
 
 +++?image=async-js/img/js-callbacks-promises-asyncawait.gif&size=auto 60%
 +++
@@ -702,6 +703,31 @@ async function genOrderItems() {
 +++
 
 # Q&A
+
+@ul
+
+- What are the values of following expressions?
+
+@ulend
+
+
++++
+
+```javascript
+(async () => {})();
+```
+
+@[1](`Promise {<resolved>: undefined}`)
+
++++
+
+```javascript
+(async () => {
+  throw new Error();
+})();
+```
+
+@[2](<span style="color: red">Uncaught \(in promise\) Error</span>)
 
 ---
 
