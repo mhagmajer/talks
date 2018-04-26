@@ -752,7 +752,7 @@ async function genOrderItems() {
 - mentoring and code reviews
 - remote
 - flexible hours
-- @fa[react] React
+- React, Meteor, Node.js and more
 
 @ulend
 
