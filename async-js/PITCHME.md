@@ -168,6 +168,7 @@ callback('end');
 @[4-8](start, end, undefined, three, one)
 
 +++?image=async-js/img/fib-sequence.gif&size=auto 80%
++++?image=async-js/img/fibonacci-head.jpg&size=auto 80%
 +++
 
 ## Naive Fibonacci implementation
@@ -737,6 +738,7 @@ async function genOrderItems() {
 
 @ul
 
+- async utilities
 - queuing & scheduling
 
 @ulend
@@ -744,3 +746,24 @@ async function genOrderItems() {
 +++
 
 ## marcin @fa[at] hagmajer . com
+
+@ul
+
+- mentoring and code reviews
+- remote
+- flexible hours
+- @fa[react] React
+
+@ulend
+
++++
+
+## marcin @fa[at] hagmajer . com
+
+@ul
+
+- @fa[link] https://blog.hagmajer.com/
+- @fa[facebook] HagmajerBlog
+- @fa[twitter] @mhagmajer
+
+@ulend
