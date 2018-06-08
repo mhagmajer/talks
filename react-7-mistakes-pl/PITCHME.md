@@ -101,8 +101,13 @@ render() {
 +++
 
 ## Statyczna kontrola typów
-### Flow (Facebook)
-### TypeScript (Microsoft)
+
+@ul
+
+- Flow (Facebook)
+- TypeScript (Microsoft)
+
+@ulend
 
 +++
 
