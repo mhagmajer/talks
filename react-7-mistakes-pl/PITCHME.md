@@ -89,7 +89,7 @@ render() {
   return (
     <div>
       <HelloPage />
-    </div>    
+    </div>
   );
 }
 ```
