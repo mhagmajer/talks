@@ -273,7 +273,7 @@ onClick() {
 ```
 
 @[1-3]
-@[4-6]
+@[5-7]
 
 +++
 
@@ -288,7 +288,7 @@ render() {
 }
 ```
 
-@[4]
+@[3-4]
 
 ---
 
@@ -329,6 +329,7 @@ class CreatePaymentMethodForm extends PaymentMethodForm {
 ```
 
 @[3]
+@[6]
 
 +++
 
@@ -348,6 +349,7 @@ class UpdatePaymentMethodForm extends PaymentMethodForm {
 ```
 
 @[3]
+@[6]
 
 +++
 
@@ -364,6 +366,8 @@ class CreatePaymentMethodForm extends React.Component {
   }
 }
 ```
+
+@[5]
 
 +++
 
@@ -409,6 +413,8 @@ const MyComponent = () => (
 ```
 
 +++
+
+## Ogólne zasady
 
 @ul
 
