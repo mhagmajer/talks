@@ -167,6 +167,8 @@ class MyComponent extends React.Component {
 
 +++
 
+## Najważniejsze zasady
+
 @ul
 
 - Używaj stanu tylko wtedy, gdy to faktycznie niezbędne
