@@ -120,6 +120,13 @@ class HelloPage extends React.Component<Props> {
 
 @[9](<span style="color: red">Error! You did not define a `doesNotExist` prop.</span>)
 
+@ul
+
+- Dokumentacja
+- Klarowny interfejs pomiędzy komponentami
+
+@ulend
+
 ---
 
 # 3. Nie nadużywaj stanu
