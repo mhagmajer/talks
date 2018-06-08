@@ -11,6 +11,7 @@
 ## React jest prosty!
 
 +++?image=assets/react-logo.png&size=auto 70%
++++
 
 ## Najważniejsze elementy
 
