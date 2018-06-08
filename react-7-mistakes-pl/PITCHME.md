@@ -84,7 +84,7 @@ class HelloPage extends React.Component {
 
 +++
 
-### Niewłaściwe użycie
+### Niewłaściwe wykorzystanie komponentu
 
 ```javascript
 render() {
