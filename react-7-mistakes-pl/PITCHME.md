@@ -80,8 +80,9 @@ class HelloPage extends React.Component {
 
 @[1]
 @[4-6]
+@[1-13]
 
-+++?image=react-7-mistakes-pl/img/prop-types-warning.png&size=auto 50%
++++?image=react-7-mistakes-pl/img/prop-types-warning.png&size=auto 20%
 +++
 
 ## Statyczna kontrola typów - Flow i TypeScript
