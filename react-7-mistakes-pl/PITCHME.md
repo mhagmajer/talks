@@ -21,14 +21,9 @@
 
 ---
 
-# 1.\nDziel komponenty na mniejsze
+# 1. Dziel komponenty na mniejsze
 
-<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
-
-+++?image=https://mdn.mozillademos.org/files/4617/default.svg&size=auto 80%
 +++
-
-## Call Stack
 
 ```javascript
 const LatestPostsComponent = (props) => (
@@ -37,7 +32,7 @@ const LatestPostsComponent = (props) => (
     <div>
       {props.posts.map(post => (
         <PostPreview
-          key={post.slug}
+          key={post.id}
           post={post}
         />
       ))}
@@ -46,14 +41,20 @@ const LatestPostsComponent = (props) => (
 );
 ```
 
+@[6](<span style="color: red; font-weight: bold">Wielka litera</span>)
+
 +++
+
+Małe komponenty:
 
 @ul
 
-- Małe komponenty ułatwiają testowanie
+- ułatwiają testowanie
+- są bardziej uniwersalne
+- porządkują kod
+- powinny mieć oddzielne pliki
 
 @ulend
-
 
 ---
 
