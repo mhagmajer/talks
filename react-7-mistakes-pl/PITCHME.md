@@ -434,8 +434,7 @@ const MyComponent = () => (
 ---?image=react-7-mistakes-pl/img/rr_logo.png&size=auto 70%
 +++
 
-# React Rangers
-## Freelance 2.0
+# Freelance 2.0
 
 @ul
 
