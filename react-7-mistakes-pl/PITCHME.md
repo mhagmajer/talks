@@ -66,19 +66,22 @@ Małe komponenty:
 import PropTypes from 'prop-types';
 
 class HelloPage extends React.Component {
+  static propTypes = {
+    name: PropTypes.string,    
+  }
+
   render() {
     return (
       <h1>Hello, {this.props.name}</h1>
     );
   }
 }
-
-HelloPage.propTypes = {
-  name: PropTypes.string,
-};
 ```
 
-+++?image=react-7-mistakes-pl/img/prop-types-warning.png&size=auto 80%
+@[1]
+@[4-6]
+
++++?image=react-7-mistakes-pl/img/prop-types-warning.png&size=auto 50%
 +++
 
 ## Statyczna kontrola typów - Flow i TypeScript
