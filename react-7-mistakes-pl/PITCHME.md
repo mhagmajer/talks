@@ -431,19 +431,17 @@ const MyComponent = () => (
 
 @olend
 
----
+---?image=react-7-mistakes-pl/img/rr_logo.png&size=auto 70%
 
-+++?image=react-7-mistakes-pl/img/rr_logo.png&size=auto 70%
-+++
-
-# Freelance 2.0
+# React Rangers
+## Freelance 2.0
 
 @ul
 
-- zagraniczne kontrakty
-- profesjonalny profil
-- praca zdalna
-- kontakt z profesjonalistami
+- zagraniczne kontrakty z pracą zdalną
+- zarządzanie profilem
+- wsparcie innych profesjonalistów
+- artykuły i wystąpienia
 
 @ulend
 
