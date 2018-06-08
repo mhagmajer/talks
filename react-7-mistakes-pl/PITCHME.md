@@ -417,6 +417,8 @@ const MyComponent = () => (
 
 ---
 
+## Podsumowanie
+
 @ol
 
 - Dziel komponenty na mniejsze
