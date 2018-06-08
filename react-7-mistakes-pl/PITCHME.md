@@ -379,11 +379,28 @@ class CreatePaymentMethodForm extends React.Component {
 
 +++
 
+## Bad example
 ```javascript
 const MyComponent = () => (
   <div>
-    <OtherComponent type="a" className="colorful" foo={123} bar={456} />
-    <OtherComponent type="b" className="colorful" foo={123} bar={456} />    
+    <OtherComponent type="a" foo={123} bar={456} />
+    <OtherComponent type="b" foo={123} bar={456} />    
+  </div>
+);
+```
+
++++
+
+## GoodExample
+```javascript
+const MyOtherComponent = ({ type }) => (
+  <OtherComponent type={type} foo={123} bar={456} />
+);
+
+const MyComponent = () => (
+  <div>
+    <MyOtherComponent type="a" />
+    <MyOtherComponent type="b" />
   </div>
 );
 ```
@@ -399,15 +416,17 @@ const MyComponent = () => (
 
 ---
 
-# React Rangers
-## Freelance 2.0
++++?image=react-7-mistakes-pl/img/rr_logo.png&size=auto 70%
++++
+
+# Freelance 2.0
 
 @ul
 
-- mentoring and code reviews
-- remote
-- flexible hours
-- React, Meteor, Node.js and more
+- zagraniczne kontrakty
+- profesjonalny profil
+- praca zdalna
+- kontakt z profesjonalistami
 
 @ulend
 
