@@ -41,6 +41,7 @@ const LatestPostsComponent = (props) => (
 );
 ```
 
+@[1, 3, 5, 7]
 @[6](<span style="color: red; font-weight: bold">Wielka litera</span>)
 
 +++
