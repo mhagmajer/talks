@@ -1,19 +1,17 @@
 ## 7 najczęstszych błędów programistów Reacta
 
-+++
-
 +++?image=assets/react-logo.png&size=auto 80%
 +++
 
 ## Czym jest React?
 
-@ol[roman]
+@ul
 
 - Komponenty
 - Render
 - Props & State
 
-@olend
+@ulend
 
 ---
 
@@ -23,7 +21,7 @@
 
 ---
 
-# 1. Dziel komponenty na mniejsze
+# 1.\nDziel komponenty na mniejsze
 
 <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop -->
 
