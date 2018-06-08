@@ -121,7 +121,6 @@ type Props = {
 class HelloPage extends React.Component<Props> {
   render() {
     this.props.doesNotExist;
-
     return (<h1>Hello, {this.props.name}</h1>);
   }
 }
@@ -145,11 +144,9 @@ class HelloPage extends React.Component<Props> {
 
 # 3. Nie nadużywaj stanu
 
-<!-- State is a subset of data that, if changed, causes a React component to re-render itself. -->
-
 +++
 
-## Stan powinien być źródłem prawdy
+## Zmiana stanu powoduje ponowne renderowanie
 
 +++
 
