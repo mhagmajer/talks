@@ -1,6 +1,6 @@
 ## 7 najczęstszych błędów programistów Reacta
 
-+++?image=assets/react-logo.png&size=auto 80%
++++?image=assets/react-logo.png&size=auto 70%
 +++
 
 ## Czym jest React?
@@ -16,6 +16,8 @@
 ---
 
 # React Rangers
+
++++?image=react-7-mistakes-pl/img/rr_logo.png&size=auto 70%
 
 ## Freelance 2.0
 
