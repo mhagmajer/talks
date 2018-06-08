@@ -1,6 +1,6 @@
 footnote : "Marcin Hagmajer, Kariera IT Kraków 09.06.2018"
-# highlight: atom-one-dark
-published: true
+highlight: atom-one-dark
+published: false
 remote-control: true
 theme-override : assets/react-theme-override.css
 theme: moon
