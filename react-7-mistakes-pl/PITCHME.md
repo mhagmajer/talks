@@ -178,10 +178,11 @@ class MyComponent extends React.Component {
 
 ---
 
-# 4. Zmiana stanu jest asynchroniczna
+# 4. Znaj cykl życia komponentu
 
 +++
 
+## Zmiana stanu jest asynchroniczna
 ```javascript
 onClick() {
   this.setState({
@@ -413,6 +414,20 @@ const MyComponent = () => (
 - Plik z kodem, który się powtarza
 
 @ulend
+
+---
+
+@ol
+
+- Dziel komponenty na mniejsze
+- Używaj PropTypes lub statycznego kontroli typów
+- Nie nadużywaj stanu
+- Znaj cykl życia komponentu
+- Poprawnie przekazuj callbacki
+- Kompozycja zamiast dziedziczenia
+- Unikaj powtarzania kodu
+
+@olend
 
 ---
 
