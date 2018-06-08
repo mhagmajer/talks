@@ -438,7 +438,7 @@ const MyComponent = () => (
 
 @ul
 
-- zagraniczne kontrakty z pracą zdalną
+- zagraniczne kontrakty (praca zdalna)
 - zarządzanie profilem
 - wsparcie innych profesjonalistów
 - artykuły i wystąpienia
