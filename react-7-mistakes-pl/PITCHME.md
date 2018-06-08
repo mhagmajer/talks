@@ -1,4 +1,4 @@
-# 7 najczęstszych błędów programistów Reacta
+## 7 najczęstszych błędów programistów Reacta
 ![JavaScript](assets/react-logo.png)
 
 +++
