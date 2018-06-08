@@ -192,9 +192,12 @@ onClick() {
 }
 ```
 
+@[2-4]
 @[6]
 
 +++
+
+## Callback po zmianie stanu
 
 ```javascript
 this.setState({
@@ -287,6 +290,37 @@ render() {
 ---
 
 # 6. Kompozycja zamiast dziedziczenia
+
++++
+
+```javascript
+class PaymentMethodForm extends React.Component {
+  render() {
+    return (
+      <div>
+        <input type="text" />
+      </div>
+    );
+  }
+}
+```
+
++++
+
+## Dziedziczenie
+```javascript
+class CreatePaymentMethodForm extends PaymentMethodForm {
+  render() {
+    const parent = super.render();
+    return (
+      <div>
+        {parent}
+        <button>Create</button>
+      </div>
+    )
+  }
+}
+```
 
 ---
 
