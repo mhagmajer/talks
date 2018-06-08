@@ -127,7 +127,12 @@ class HelloPage extends React.Component<Props> {
 }
 ```
 
+@[1]
+@[3-5](Definicja typu)
+@[7](Parametry klasowe)
 @[9](<span style="color: red">Error! You did not define a `doesNotExist` prop.</span>)
+
++++
 
 @ul
 
