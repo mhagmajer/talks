@@ -153,13 +153,15 @@ class HelloPage extends React.Component<Props> {
 ## Unikaj stanu zależnego
 
 ```javascript
-constructor(props) {
-  this.state = {
+class MyComponent extends React.Component {
+  state = {
     selectedCar: null,
     submitEnabled: false,
-  };
+  };  
 }
 ```
+
+@[4]
 
 +++
 
@@ -172,24 +174,44 @@ constructor(props) {
 
 ---
 
-# 4. setState jest asynchroniczny
+# 4. Zmiana stanu jest asynchroniczna
 
 +++
 
 ```javascript
-setState({
+this.setState({
   count: 5,
 });
 console.log(this.state.count);
 ```
 
----
-
-# 5. Binduj poprawnie callbacki
+@[4]
 
 +++
 
-## this
+```javascript
+this.setState({
+  count: 5,
+}, () => {
+  console.log(this.state.count);  
+});
+```
+
++++
+
+## Cykl życia komponetu
+
+```javascript
+componentDidUpdate() {
+  console.log(this.state.count);    
+}
+```
+
+@[1](Wywoływana w różnych przypadkach)
+
+---
+
+# 5. Poprawnie przekazuj callbacki
 
 +++
 
@@ -206,6 +228,52 @@ render() {
   );
 }
 ```
+
+@[1-3]
+@[7-9]
+@[8]
+
++++
+
+## this
+
+@ul
+
+- Powinien wskazywać na dany komponent
+- Zależny od kontekstu wykonania
+
+@ulend
+
++++
+
+## Metoda obiektu zamiast prototypu
+```javascript
+onClick = () => {
+  alert(`Hello ${this.props.name}`);
+}
+
+onClick() {
+  alert(`Hello ${this.props.name}`);
+}
+```
+
+@[1-3]
+@[4-6]
+
++++
+
+## Tworzenie nowej funkcji
+```javascript
+render() {
+  return (
+    <button
+      onClick={() => this.onClick()}
+    >Test</button>
+  );
+}
+```
+
+@[4]
 
 ---
 
