@@ -1,25 +1,26 @@
 ## 7 najczęstszych błędów programistów Reacta
 
-+++?image=assets/react-logo.png&size=auto 70%
 +++
-
-## Czym jest React?
-
-@ul
-
-- Komponenty
-- Render
-- Props & State
-
-@ulend
-
----
 
 # React Rangers
 
 +++?image=react-7-mistakes-pl/img/rr_logo.png&size=auto 70%
++++
 
-## Freelance 2.0
+---
+
++++?image=assets/react-logo.png&size=auto 70%
++++
+
+## React jest prosty!
+
+@ul
+
+- Komponenty
+- Funckja render
+- Właściwości (props) i stan (state)
+
+@ulend
 
 ---
 
@@ -191,11 +192,10 @@ render() {
 
 @ulend
 
-
 ---
 
-
-## marcin @fa[at] hagmajer . com
+# React Rangers
+## Freelance 2.0
 
 @ul
 
