@@ -222,6 +222,8 @@ componentDidUpdate() {
 
 @[1](Wywoływana w różnych przypadkach)
 
++++?image=react-7-mistakes-pl/img/react-lifecycle.png&size=auto 70%
+
 ---
 
 # 5. Poprawnie przekazuj callbacki
