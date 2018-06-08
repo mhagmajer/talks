@@ -183,13 +183,16 @@ class MyComponent extends React.Component {
 +++
 
 ```javascript
-this.setState({
-  count: 5,
-});
-console.log(this.state.count);
+onClick() {
+  this.setState({
+    count: 5,
+  });
+
+  console.log(this.state.count);  
+}
 ```
 
-@[4]
+@[6]
 
 +++
 
@@ -200,6 +203,8 @@ this.setState({
   console.log(this.state.count);  
 });
 ```
+
+@[3-5]
 
 +++
 
