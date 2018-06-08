@@ -1,0 +1,28 @@
+.reveal pre {
+  width: 100%;
+}
+
+.reveal pre code {
+  font-size: 1.2em;
+  line-height: 1.2;
+  /* max-height: 50vh !important; */
+  opacity: 0.95;
+  border-radius: 10px;
+}
+
+.reveal .slides section .code-presenting-annotation {
+  font-size: 70%;
+}
+
+.reveal ol.roman {
+  list-style-type: upper-roman;
+}
+
+.reveal div.buttons button {
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  border-radius: 28px;
+  color: #eee8d5;
+  font-size: 22pt;
+  margin: 0 10px;
+  padding: 20px;
+}
