@@ -1,6 +1,8 @@
 ## 7 najczęstszych błędów programistów Reacta
-![JavaScript](assets/react-logo.png)
 
++++
+
++++?image=assets/react-logo.png&size=auto 80%
 +++
 
 ## Czym jest React?
