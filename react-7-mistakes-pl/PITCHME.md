@@ -84,6 +84,8 @@ class HelloPage extends React.Component {
 
 +++
 
+### Niewłaściwe użycie
+
 ```javascript
 render() {
   return (
@@ -93,7 +95,7 @@ render() {
   );
 }
 ```
-@[4]
+@[3,4]
 
 +++?image=react-7-mistakes-pl/img/prop-types-warning.png&size=auto 30%
 +++
