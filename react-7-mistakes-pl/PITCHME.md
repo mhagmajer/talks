@@ -133,6 +133,8 @@ class HelloPage extends React.Component<Props> {
 
 +++
 
+## PropTypes
+
 @ul
 
 - Dokumentacja
