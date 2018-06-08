@@ -451,9 +451,7 @@ const MyComponent = () => (
 
 @ul
 
-- @fa[link] https://blog.hagmajer.com/
-- @fa[facebook] HagmajerBlog
-- @fa[twitter] @mhagmajer
-- @fa[github] @mhagmajer
+- @fa[facebook] /ReactRangers
+- @fa[twitter] @ReactRangers
 
 @ulend
