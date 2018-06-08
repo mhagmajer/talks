@@ -765,5 +765,6 @@ async function genOrderItems() {
 - @fa[link] https://blog.hagmajer.com/
 - @fa[facebook] HagmajerBlog
 - @fa[twitter] @mhagmajer
+- @fa[github] @mhagmajer
 
 @ulend
