@@ -58,13 +58,64 @@ Małe komponenty:
 
 ---
 
-# 2. Nie nadużywaj stanu
+# 2. Używaj React PropTypes
+
++++
+
+```javascript
+import PropTypes from 'prop-types';
+
+class HelloPage extends React.Component {
+  render() {
+    return (
+      <h1>Hello, {this.props.name}</h1>
+    );
+  }
+}
+
+HelloPage.propTypes = {
+  name: PropTypes.string,
+};
+```
+
++++?image=react-7-mistakes-pl/img/prop-types-warning.png&size=auto 80%
++++
+
+## Statyczna kontrola typów - Flow i TypeScript
+
++++
+
+```javascript
+import * as React from 'react';
+
+type Props = {
+  +name: string,
+};
+
+class HelloPage extends React.Component<Props> {
+  render() {
+    this.props.doesNotExist;
+
+    return (<h1>Hello, {this.props.name}</h1>);
+  }
+}
+```
+
+@[9](<span style="color: red">Error! You did not define a `doesNotExist` prop.</span>)
+
+---
+
+# 3. Nie nadużywaj stanu
 
 <!-- State is a subset of data that, if changed, causes a React component to re-render itself. -->
 
 +++
 
-<!-- Single source of truth -->
+## Stan powinien być źródłem prawdy
+
++++
+
+## Unikaj stanu zależnego
 
 ```javascript
 constructor(props) {
@@ -80,25 +131,26 @@ constructor(props) {
 @ul
 
 - Używaj stanu tylko wtedy, gdy to faktycznie niezbędne
+- Stan powinien być źródłem prawdy
 
 @ulend
 
 ---
 
-# 3. Unikaj powtarzania kodu
+# 4. setState jest asynchroniczny
 
 +++
 
-@ul
-
-- Zagmatfany kod, trudny do testowania i zrozumienia
-- Plik z kodem, który się powtarza
-
-@ulend
+```javascript
+setState({
+  count: 5,
+});
+console.log(this.state.count);
+```
 
 ---
 
-# 4. Binduj poprawnie callbacki
+# 5. Binduj poprawnie callbacki
 
 +++
 
@@ -122,41 +174,24 @@ render() {
 
 ---
 
-# 5. setState jest asynchroniczny
+# 6. Kompozycja zamiast dziedziczenia
+
+---
+
+# 7. Unikaj powtarzania kodu
 
 +++
-
-```javascript
-setState({
-  count: 5,
-});
-console.log(this.state.count);
-```
-
----
-
-# 6. Używaj React PropTypes
-
-+++
-
-## Używaj statycznej kontroli typów
-
----
-
-# 7. Kompozycja zamiast dziedziczenia
-
----
-
-## `npm/promise-more`
 
 @ul
 
-- async utilities
-- queuing & scheduling
+- Zagmatfany kod, trudny do testowania i zrozumienia
+- Plik z kodem, który się powtarza
 
 @ulend
 
-+++
+
+---
+
 
 ## marcin @fa[at] hagmajer . com
 
