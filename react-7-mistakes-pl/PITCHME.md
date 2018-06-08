@@ -82,6 +82,19 @@ class HelloPage extends React.Component {
 @[4-6]
 @[1-13]
 
++++
+
+```javascript
+render() {
+  return (
+    <div>
+      <HelloPage />
+    </div>    
+  );
+}
+```
+@[4]
+
 +++?image=react-7-mistakes-pl/img/prop-types-warning.png&size=auto 30%
 +++
 
