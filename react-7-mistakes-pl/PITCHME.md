@@ -14,7 +14,7 @@
 @ul
 
 - Komponenty
-- Funckja render
+- Funkcja render
 - Właściwości (props) i stan (state)
 
 @ulend
@@ -58,7 +58,7 @@ Małe komponenty:
 
 ---
 
-# 2. Używaj React PropTypes
+# 2. Używaj PropTypes
 
 +++
 
