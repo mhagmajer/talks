@@ -5,14 +5,13 @@
 # React Rangers
 
 +++?image=react-7-mistakes-pl/img/rr_logo.png&size=auto 70%
-+++
 
 ---
 
+## React jest prosty!
+
 +++?image=assets/react-logo.png&size=auto 70%
 +++
-
-## React jest prosty!
 
 @ul
 
