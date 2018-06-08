@@ -291,8 +291,11 @@ render() {
 
 # 6. Kompozycja zamiast dziedziczenia
 
+<!-- http://blog.brew.com.hk/react-101-composition-vs-inheritance/ -->
+
 +++
 
+## Bazowy formularz
 ```javascript
 class PaymentMethodForm extends React.Component {
   render() {
@@ -307,7 +310,7 @@ class PaymentMethodForm extends React.Component {
 
 +++
 
-## Dziedziczenie
+## Create - dziedziczenie
 ```javascript
 class CreatePaymentMethodForm extends PaymentMethodForm {
   render() {
@@ -322,9 +325,68 @@ class CreatePaymentMethodForm extends PaymentMethodForm {
 }
 ```
 
+@[3]
+
++++
+
+## Update - dziedziczenie
+```javascript
+class UpdatePaymentMethodForm extends PaymentMethodForm {
+  render() {
+    const parent = super.render();
+    return (
+      <div>
+        {parent}
+        <button>Update</button>
+      </div>
+    )
+  }
+}
+```
+
+@[3]
+
++++
+
+## Create - kompozycja
+```javascript
+class CreatePaymentMethodForm extends React.Component {
+  render() {
+    return (
+      <div>
+        <PaymentMethodForm />
+        <button>Create</button>
+      </div>
+    )
+  }
+}
+```
+
++++
+
+## Używaj dziedziczenia tylko w wyjątkowych wypadkach
+
+@ul
+
+- Implementacja nowych możliwości
+- Integracja ze stanem globalnym
+
+@ulend
+
 ---
 
 # 7. Unikaj powtarzania kodu
+
++++
+
+```javascript
+const MyComponent = () => (
+  <div>
+    <OtherComponent type="a" className="colorful" foo={123} bar={456} />
+    <OtherComponent type="b" className="colorful" foo={123} bar={456} />    
+  </div>
+);
+```
 
 +++
 
