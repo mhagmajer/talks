@@ -100,7 +100,9 @@ render() {
 +++?image=react-7-mistakes-pl/img/prop-types-warning.png&size=auto 30%
 +++
 
-## Statyczna kontrola typów - Flow i TypeScript
+## Statyczna kontrola typów
+### Flow (Facebook)
+### TypeScript (Microsoft)
 
 +++
 
