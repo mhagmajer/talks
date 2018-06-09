@@ -67,7 +67,7 @@ import PropTypes from 'prop-types';
 
 class HelloPage extends React.Component {
   static propTypes = {
-    name: PropTypes.string,    
+    name: PropTypes.string.isRequired,    
   }
 
   render() {
@@ -80,6 +80,7 @@ class HelloPage extends React.Component {
 
 @[1]
 @[4-6]
+@[10]
 @[1-13]
 
 +++
