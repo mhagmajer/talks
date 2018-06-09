@@ -436,7 +436,7 @@ const MyComponent = () => (
 @ol
 
 - Dziel komponenty na mniejsze
-- Używaj PropTypes lub statycznego kontroli typów
+- Używaj PropTypes lub statycznej kontroli typów
 - Nie nadużywaj stanu
 - Znaj cykl życia komponentu
 - Poprawnie przekazuj callbacki
