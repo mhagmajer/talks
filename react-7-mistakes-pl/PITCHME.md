@@ -129,6 +129,7 @@ class HelloPage extends React.Component<Props> {
 
 @[1]
 @[3-5](Definicja typu)
+@[7-12]
 @[7](Parametry klasowe)
 @[9](<span style="color: red">Error! You did not define a `doesNotExist` prop.</span>)
 
@@ -140,6 +141,7 @@ class HelloPage extends React.Component<Props> {
 
 - Dokumentacja
 - Klarowny interfejs pomiędzy komponentami
+- Ochrona przed błędami
 
 @ulend
 
@@ -149,7 +151,7 @@ class HelloPage extends React.Component<Props> {
 
 +++
 
-## Zmiana stanu powoduje ponowne renderowanie
+## Zmiana stanu powoduje ponowne renderowanie komponentu
 
 +++
 
@@ -164,6 +166,7 @@ class MyComponent extends React.Component {
 }
 ```
 
+@[3]
 @[4]
 
 +++
@@ -172,8 +175,9 @@ class MyComponent extends React.Component {
 
 @ul
 
-- Używaj stanu tylko wtedy, gdy to faktycznie niezbędne
-- Stan powinien być źródłem prawdy
+- Używaj stanu tylko gdy musisz
+- Trzymaj minimum właściwości w testowanie
+- Poznaj rozwiązania do stanu globalnego
 
 @ulend
 
@@ -195,7 +199,7 @@ onClick() {
 ```
 
 @[2-4]
-@[6]
+@[6](poprzednia wartość)
 
 +++
 
@@ -209,7 +213,8 @@ this.setState({
 });
 ```
 
-@[3-5]
+@[3-5](callback)
+@[4](nowa wartość)
 
 +++
 
@@ -247,7 +252,7 @@ render() {
 
 @[1-3]
 @[7-9]
-@[8]
+@[2](this)
 
 +++
 
@@ -419,8 +424,8 @@ const MyComponent = () => (
 
 @ul
 
-- Zagmatfany kod, trudny do testowania i zrozumienia
-- Plik z kodem, który się powtarza
+- Wydzielaj wspólny kod do oddzielnych komponentów
+- Plik ze wspólnymi fukcjami
 
 @ulend
 
