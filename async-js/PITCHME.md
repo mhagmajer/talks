@@ -554,7 +554,7 @@ Promise.race([
 
 @ul
 
-- How do timeout operations?
+- How do we timeout operations?
 
 @ulend
 
@@ -577,7 +577,7 @@ Promise.race([
 
 @ul
 
-- How do process tasks in sequence?
+- How do we process tasks in sequence?
 
 @ulend
 
@@ -743,19 +743,7 @@ async function genOrderItems() {
 
 @ulend
 
-+++
-
-## marcin @fa[at] hagmajer . com
-
-@ul
-
-- mentoring and code reviews
-- remote
-- flexible hours
-- React, Meteor, Node.js and more
-
-@ulend
-
++++?image=react-7-mistakes-pl/img/rr_logo.png&size=auto 70%
 +++
 
 ## marcin @fa[at] hagmajer . com
