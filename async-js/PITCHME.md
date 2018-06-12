@@ -324,11 +324,11 @@ function readBody(cb) {
 
 ## Basic tool for modeling asynchronous operations
 
++++?image=async-js/img/promise-states.png&size=auto 60%
 +++
 
 ## Promise creation
 
-+++?image=async-js/img/promise-states.png&size=auto 60%
 +++
 
 ```javascript
